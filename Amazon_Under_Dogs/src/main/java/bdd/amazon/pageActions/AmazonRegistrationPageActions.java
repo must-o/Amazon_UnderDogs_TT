@@ -16,6 +16,7 @@ public class AmazonRegistrationPageActions {
 	public AmazonRegistrationPageActions() {
 		this.elements = new AmazonRegistrationPageElements();
 		PageFactory.initElements(GetWebDriver.webdriver, this.elements);
+		System.out.println();
 	}
 	
 	
