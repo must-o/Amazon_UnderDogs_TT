@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>Amazon_Under_Dogs</groupId>
-  <artifactId>Amazon_Under_Dogs</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Amazon_Under_Dogs</groupId>
+	<artifactId>Amazon_Under_Dogs</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
   <dependencies>
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -86,6 +87,7 @@
 
 	</dependencies>
   
+  
   <build>
 		<plugins>
 
@@ -104,7 +106,9 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
-					
+					<includes>
+						<include>**/UpsTestRunner.java</include>
+					</includes>
 					<excludes>
 						<exclude>none</exclude>
 					</excludes>
@@ -148,5 +152,4 @@
 
 		</plugins>
 	</build>
-  
 </project>
