@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(plugin = { "pretty", "html:target/cucumber", "json:target/cucumber-json.json" }, features = {
 		"src/test/resources/Features" }, glue = { "bdd.amazon.stepDefinitions" }, tags = { "@chrome" }, monochrome = true)
 
-public class AmazonRegistrationPagetestRunner extends AbstractTestNGCucumberTests {
+public class AmazonTestRunner extends AbstractTestNGCucumberTests {
 
 }
 

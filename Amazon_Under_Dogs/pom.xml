@@ -107,7 +107,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
-						<include>**/UpsTestRunner.java</include>
+						<include>**/AmazonTestRunner.java</include>
 					</includes>
 					<excludes>
 						<exclude>none</exclude>
@@ -128,7 +128,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 						</goals>
 						<configuration>
 							<projectName>
-								Whatever Project Name
+								Amazon UnderDogs
 							</projectName>
 							<skip>false</skip>
 							<outputDirectory>${project.build.directory}</outputDirectory>
