@@ -6,16 +6,16 @@ import org.openqa.selenium.support.FindBy;
 public class RegistrationPageElements {
 
 	@FindBy(id = "ap_customer_name")
-	public WebElement name;
+	public WebElement nameInput;
 
 	@FindBy(id = "ap_email")
-	public WebElement email;
+	public WebElement emailInput;
 
 	@FindBy(id = "ap_password")
-	public WebElement password;
+	public WebElement passwordInput;
 
 	@FindBy(id = "ap_password_check")
-	public WebElement password2;
+	public WebElement password2Input;
 
 	@FindBy(id = "continue")
 	public WebElement continueButton;
