@@ -10,7 +10,7 @@ import io.cucumber.java.Scenario;
 public class AfterActions {
 
 	@After
-	public void afterChromeSceanrio(Scenario scenario) {
+	public void afterChromeSceanrio(Scenario scenario) throws InterruptedException {
 
 		System.out.println("::: Test Executed - " + scenario.getName() + " :::");
 		System.out.println("::: Closing Browsers :::");
@@ -25,7 +25,7 @@ public class AfterActions {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		Thread.sleep(3000);
 		GetWebDriver.tearDownWebDriver();
 		System.out.println("::: Driver Closed :::");
 
