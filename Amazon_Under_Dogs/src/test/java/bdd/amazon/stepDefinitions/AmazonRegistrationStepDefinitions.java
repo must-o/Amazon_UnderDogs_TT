@@ -16,6 +16,7 @@ public class AmazonRegistrationStepDefinitions {
 	public void customer_in_Amazon_Create_Account_page() {
 		action.navigateToAmazonCreateAccountPage();
 		action.validateAmazonCreateAccountPage();
+		System.out.println();
 	}
 
 	@When("User inputs {string} in the name field")
