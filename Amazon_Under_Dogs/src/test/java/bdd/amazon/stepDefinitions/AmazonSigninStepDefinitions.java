@@ -48,13 +48,16 @@ public class AmazonSigninStepDefinitions {
 	}
 
 	@When("User clicks on the Sign-in button")
-	public void user_clicks_on_the_sign_in_button() {
+	public void user_clicks_on_the_sign_in_button() throws InterruptedException {
 		action.clickSignInButton();
+		Thread.sleep(3000);
+
 
 	}
 
 	@Then("User should be should be redirected to the home page of amazon")
-	public void user_should_be_should_be_redirected_to_the_home_page_of_amazon() {
+	public void user_should_be_should_be_redirected_to_the_home_page_of_amazon() throws InterruptedException {
+		Thread.sleep(3000);
 		action.validateAmazonHomePage();
 
 	}
