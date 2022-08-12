@@ -37,11 +37,11 @@ public class AmzPaymentPageActions {
 	public void clickSignInToYourAccBtn() {
 		this.elements.signInToYourAccBtn.click();
 	}
-	
+
 	public void clickRemoveBtn() {
 		this.elements.remove.click();
 	}
-	
+
 	public void emailInput(String email) {
 		this.elements.e_mailInput.sendKeys(email);
 	}
@@ -98,4 +98,35 @@ public class AmzPaymentPageActions {
 		return paymentPage;
 	}
 
+	public String getReviewYourAddressMsg() {
+		String errorMsg = this.elements.reviewYourAddressMsg.getText();
+		return errorMsg;
+	}
+
+	public String getUnableToVerifyMsg() {
+		String errorMsg = this.elements.unableToVerify.getText();
+		return errorMsg;
+	}
+
+	public void clickEnterAGiftCardBtn() {
+		this.elements.enterAGiftCardBtn.click();
+	}
+
+	public void entCodeBox() {
+		this.elements.enterCodeBox.click();
+	}
+
+	public void applyBtn() {
+		this.elements.applyButton.click();
+	}
+
+	public void giftCardCodeInput(String giftCardCode) {
+		this.elements.inputCode.sendKeys(giftCardCode);
+	}
+
+	public String getThereWasAProblemMsg() {
+		String errorMsg = this.elements.reviewYourAddressMsg.getText();
+		return errorMsg;
+
+	}
 }
