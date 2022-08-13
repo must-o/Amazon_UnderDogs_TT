@@ -56,10 +56,7 @@ public class AmazonPaymentPageElements {
 	public WebElement unableToVerify;
 	
 	@FindBy(xpath = "//*[starts-with(@class,'a-size-base')]")
-					 //*[@id=\"pp-Ekv75f-94\"]/span/span
-	                 //*[@id=\"pp-VVlON0-94\"]/span/span
-	                 //*[@id=\"pp-uxocYd-94\"]/span/span
-					 //*[@id=\"pp-VTChQF-94\"]/span/span
+					
 	public WebElement enterAGiftCardBtn;
 	
 	@FindBy(xpath = "//*[@id=\"pp-RKYcCt-96\"]")

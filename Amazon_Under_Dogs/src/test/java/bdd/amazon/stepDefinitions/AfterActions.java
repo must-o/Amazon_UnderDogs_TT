@@ -25,7 +25,7 @@ public class AfterActions {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		Thread.sleep(3000);
+		Thread.sleep(1500);
 		GetWebDriver.tearDownWebDriver();
 		System.out.println("::: Driver Closed :::");
 

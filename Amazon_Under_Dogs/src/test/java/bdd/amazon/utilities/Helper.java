@@ -6,5 +6,8 @@ public class Helper {
 		return GetWebDriver.webdriver.getTitle();
 	}
 	
+	public static String getPageUrl() {
+		return GetWebDriver.webdriver.getCurrentUrl();
+	}
 	
 }

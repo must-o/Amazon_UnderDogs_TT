@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 01 18:38:46 EDT 2022</td>
+<td>Started on:</td><td>Sat Aug 13 06:14:29 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12814 ms)</td>
+<tr><td>Total time:</td><td>215 seconds (215037 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,93 +67,63 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='bdd.amazon.runner.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.amazon.runner.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Amazon Registration with invalid info using email", "Registration"</td>
-<td><div><pre>org.testng.SkipException: TODO: implement me
-	at io.cucumber.testng.TestCaseResultObserver.lambda$assertTestCasePassed$3(TestCaseResultObserver.java:27)
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:113)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:21)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: io.cucumber.java.PendingException: TODO: implement me
-	at bdd.amazon.stepDefinitions.AmazonRegistrationStepDefinitions.user_inputs_in_the_name_field(AmazonRegistrationStepDefinitions.java:24)
-	at ✽.User inputs &quot; &quot; in the name field(file:///Users/moe/git/Amazon_UnderDogs_TT/Amazon_Under_Dogs/src/test/resources/Features/AmzRegistration.feature:26)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1061806694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1061806694'><pre>org.testng.SkipException: TODO: implement me
-	at io.cucumber.testng.TestCaseResultObserver.lambda$assertTestCasePassed$3(TestCaseResultObserver.java:27)
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:113)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:21)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:125)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: io.cucumber.java.PendingException: TODO: implement me
-	at bdd.amazon.stepDefinitions.AmazonRegistrationStepDefinitions.user_inputs_in_the_name_field(AmazonRegistrationStepDefinitions.java:24)
-	at ✽.User inputs &quot; &quot; in the name field(file:///Users/moe/git/Amazon_UnderDogs_TT/Amazon_Under_Dogs/src/test/resources/Features/AmzRegistration.feature:26)
-</pre></div></td>
-<td>11</td>
-<td>bdd.amazon.runner.AmazonTestRunner@382db087</td></tr>
+<td title='bdd.amazon.runner.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.amazon.runner.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify for invalid product", "Amazon.com Product Search and ATC"</td>
+<td></td>
+<td>15</td>
+<td>bdd.amazon.runner.AmazonTestRunner@2698dc7</td></tr>
+<tr>
+<td title='bdd.amazon.runner.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.amazon.runner.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Amazon Sign-in with valid credentials using email", "Amazon Sign-in Feature"</td>
+<td></td>
+<td>17</td>
+<td>bdd.amazon.runner.AmazonTestRunner@2698dc7</td></tr>
+<tr>
+<td title='bdd.amazon.runner.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.amazon.runner.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Amazon Registration with valid info should redirect to captcha page", "Amazon Registration Feature"</td>
+<td></td>
+<td>16</td>
+<td>bdd.amazon.runner.AmazonTestRunner@2698dc7</td></tr>
+<tr>
+<td title='bdd.amazon.runner.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.amazon.runner.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Amazon Sign-in functionality with valid email and invalid password", "Amazon Sign-in Feature"</td>
+<td></td>
+<td>14</td>
+<td>bdd.amazon.runner.AmazonTestRunner@2698dc7</td></tr>
+<tr>
+<td title='bdd.amazon.runner.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.amazon.runner.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Amazon login functionality without entering email", "Amazon Sign-in Feature"</td>
+<td></td>
+<td>9</td>
+<td>bdd.amazon.runner.AmazonTestRunner@2698dc7</td></tr>
+<tr>
+<td title='bdd.amazon.runner.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.amazon.runner.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should get an error message if invalid email is provided", "Amazon Sign-in Feature"</td>
+<td></td>
+<td>12</td>
+<td>bdd.amazon.runner.AmazonTestRunner@2698dc7</td></tr>
+<tr>
+<td title='bdd.amazon.runner.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.amazon.runner.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for a valid product", "Amazon.com Product Search and ATC"</td>
+<td></td>
+<td>34</td>
+<td>bdd.amazon.runner.AmazonTestRunner@2698dc7</td></tr>
+<tr>
+<td title='bdd.amazon.runner.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.amazon.runner.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Shipping Address with valid info", "Amazon Payment Feature"</td>
+<td></td>
+<td>33</td>
+<td>bdd.amazon.runner.AmazonTestRunner@2698dc7</td></tr>
+<tr>
+<td title='bdd.amazon.runner.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.amazon.runner.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Shipping Address with Invalid info", "Amazon Payment Feature"</td>
+<td></td>
+<td>34</td>
+<td>bdd.amazon.runner.AmazonTestRunner@2698dc7</td></tr>
+<tr>
+<td title='bdd.amazon.runner.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: bdd.amazon.runner.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Amazon Registration with invalid info using email should show error messages", "Amazon Registration Feature"</td>
+<td></td>
+<td>25</td>
+<td>bdd.amazon.runner.AmazonTestRunner@2698dc7</td></tr>
 </table><p>
 </body>
 </html>

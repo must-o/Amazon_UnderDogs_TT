@@ -29,14 +29,3 @@ Feature: Amazon Payment Feature
     And User inputs "11372" in the Zip Code field
     And User clicks Use This Address
     Then User should see Select a Payment Method page
-    #When User inputs "74-09 37th Ave" in the Street Address field
-    #And User inputs "Suite #203 Bruson Building" in Apt, Suite, Unit, Building field
-    #And User inputs "Jackson Heights" in the City field
-    #And User selects "New York" in the State field
-    #And User inputs "11372" in the Zip Code field
-    #And User clicks Use This Address
-    #And user clicks on Enter a gift card, voucher or promotional code
-    #And user clicks in the box
-    #And user input "123456" in the field
-    #And user clicks on Apply Button
-    #Then user should recive an error message "There was a problem."

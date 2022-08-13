@@ -25,70 +25,79 @@ public class AmazonRegistrationStepDefinitions {
 	@When("User inputs {string} in the name field")
 	public void user_inputs_in_the_name_field(String name) throws InterruptedException {
 		action.inputName(name);
-		Thread.sleep(500);
+		Thread.sleep(1500);
 
 	}
 
 	@When("User inputs {string} in email field")
 	public void user_inputs_in_email_field(String email) throws InterruptedException {
 		action.inputEmail(email);
-		Thread.sleep(500);
+		Thread.sleep(1500);
 	}
 
 	@When("User inputs {string} in the password field")
 	public void user_inputs_in_the_password_field(String string) throws InterruptedException {
 		action.inputPassword(string);
-		Thread.sleep(500);
+		Thread.sleep(1500);
 
 	}
 
 	@When("User inputs {string} in the re-enter password field")
 	public void user_inputs_in_the_re_enter_password_field(String string) throws InterruptedException {
 		action.inputPassword2(string);
-		Thread.sleep(500);
+		Thread.sleep(2000);
 
 	}
 
 	@When("User clicks continue")
-	public void user_clicks_continue() {
+	public void user_clicks_continue() throws InterruptedException {
 		action.clickContinueButton();
+		Thread.sleep(1500);
+
 	}
 
 	@Then("User should see name field error message {string}")
-	public void user_should_see_name_field_error_message(String nameErrorMsg) {
+	public void user_should_see_name_field_error_message(String nameErrorMsg) throws InterruptedException {
 		String actualErrorMsg = action.getNameErrorMsg();
 		Assert.assertEquals(actualErrorMsg, nameErrorMsg);
 		System.out.println(actualErrorMsg);
+		Thread.sleep(1000);
 
 	}
 
 	@Then("User should see email field error message {string}")
-	public void user_should_see_email_field_error_message(String emailErrorMsg) {
+	public void user_should_see_email_field_error_message(String emailErrorMsg) throws InterruptedException {
 		String actualErrorMsg = action.getEmailInvalidMsg();
 		Assert.assertEquals(actualErrorMsg, emailErrorMsg);
 		System.out.println(actualErrorMsg);
+		Thread.sleep(1000);
 
 	}
 
 	@Then("User should see password field error message  {string}")
-	public void user_should_see_password_field_error_message(String passwordErrorMsg) {
+	public void user_should_see_password_field_error_message(String passwordErrorMsg) throws InterruptedException {
 		String actualErrorMsg = action.getPasswordInvalidMsg();
 		Assert.assertEquals(actualErrorMsg, passwordErrorMsg);
 		System.out.println(actualErrorMsg);
+		Thread.sleep(1000);
 
 	}
 
 	@Then("User should see password2 field error message {string}")
-	public void user_should_see_password2_field_error_message(String password2ErrorMsg) {
+	public void user_should_see_password2_field_error_message(String password2ErrorMsg) throws InterruptedException {
 		String actualErrorMsg = action.getPassword2MismatchMsg();
 		Assert.assertEquals(actualErrorMsg, password2ErrorMsg);
 		System.out.println(actualErrorMsg);
+		Thread.sleep(1000);
 
 	}
 	
 	@Then("User should be redircted to the captcha puzzle page")
-	public void user_should_be_redircted_to_the_captcha_puzzle_page() {
+	public void user_should_be_redircted_to_the_captcha_puzzle_page() throws InterruptedException {
 		action.validateAmazonCaptchaPage();
+		Thread.sleep(3000);
+
+		
 	}
 	
 

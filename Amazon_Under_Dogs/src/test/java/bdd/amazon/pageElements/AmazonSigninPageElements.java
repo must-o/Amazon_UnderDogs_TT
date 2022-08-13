@@ -25,4 +25,9 @@ public class AmazonSigninPageElements {
 	
 	@FindBy(xpath="//*[contains(text(),'Enter your email or mobile phone number')]")	
 	public WebElement enterEmailErrorMsg;
+	
+	@FindBy(xpath="//*[@id=\"auth-warning-message-box\"]/div/h4")
+	public WebElement pwImportantMessage;
+	
+	
 	}

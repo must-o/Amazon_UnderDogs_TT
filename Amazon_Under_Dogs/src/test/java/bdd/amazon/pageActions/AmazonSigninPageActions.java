@@ -57,6 +57,10 @@ public class AmazonSigninPageActions {
 		String errorMsg = this.elements.pwErrorMsg.getText();
 		return errorMsg;
 	}
+	public String getPwImportantMessage() {
+		String errorMsg = this.elements.pwImportantMessage.getText();
+		return errorMsg;
+	}
 
 	public String getemailErrorMsg() {
 		String errorMsg = this.elements.emailErrorMsg.getText();
