@@ -1,5 +1,7 @@
 package bdd.amazon.stepDefinitions;
 
+import org.testng.Assert;
+
 import bdd.amazon.pageActions.AmzPaymentPageActions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -103,6 +105,46 @@ public class AmzPaymentStepDefinition {
 	    action.validatePaymentMethodPage();
 	    Thread.sleep(1000);
 	}
+	
+	@Then("User should see error message {string}")
+	public void user_should_see_error_message(String reviewYourAddressMsg) {
+		String actualErrorMsg = action.getReviewYourAddressMsg();
+		Assert.assertEquals(actualErrorMsg, reviewYourAddressMsg);
+		System.out.println(actualErrorMsg);
+	}
+	
+	@When("user clicks on Enter a gift card, voucher or promotional code")
+	public void user_clicks_on_Enter_a_gift_card_voucher_or_promotional_code() throws InterruptedException {
+	   action.clickEnterAGiftCardBtn();
+	   Thread.sleep(1000);
+	}
+	@When("user clicks in the box")
+	public void user_clicks_in_the_box() throws InterruptedException {
+	   action.entCodeBox();
+	   Thread.sleep(1000);
+	}
+
+
+	@When("user input {string} in the field")
+	public void user_input_in_the_field(String giftCardCode) throws InterruptedException {
+	   action.giftCardCodeInput(giftCardCode);
+	   Thread.sleep(1000);
+	}
+
+	@When("user clicks on Apply Button")
+	public void user_clicks_on_Apply_Button() throws InterruptedException {
+	    action.applyBtn();
+	    Thread.sleep(1000);
+	}
+
+	@Then("user should recive an error message {string}")
+	public void user_should_recive_an_error_message(String reviewYourAddressMsg) {
+		String actualErrorMsg = action.getThereWasAProblemMsg();
+		Assert.assertEquals(actualErrorMsg, reviewYourAddressMsg);
+		System.out.println(actualErrorMsg);
+	}
+
+
 
 
 }

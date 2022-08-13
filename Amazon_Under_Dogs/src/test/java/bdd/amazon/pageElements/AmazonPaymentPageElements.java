@@ -48,5 +48,31 @@ public class AmazonPaymentPageElements {
 
 	@FindBy(id = "//*[@id=\"pp-xO8HRd-71\"]/div[1]/div/div/div/div/div/h4")
 	public WebElement paymentMethodPage;
-
+	
+	@FindBy(xpath = "//*[@id=\"address-ui-widgets-enterAddressFormContainer\"]/div[1]/div/div/h4")
+	public WebElement reviewYourAddressMsg;
+	
+	@FindBy(xpath = "//*[@id=\"address-ui-widgets-enterAddressFormContainer\"]/div[2]/div/div[10]/div/div/div/div/div")
+	public WebElement unableToVerify;
+	
+	@FindBy(xpath = "//*[starts-with(@class,'a-size-base')]")
+					 //*[@id=\"pp-Ekv75f-94\"]/span/span
+	                 //*[@id=\"pp-VVlON0-94\"]/span/span
+	                 //*[@id=\"pp-uxocYd-94\"]/span/span
+					 //*[@id=\"pp-VTChQF-94\"]/span/span
+	public WebElement enterAGiftCardBtn;
+	
+	@FindBy(xpath = "//*[@id=\"pp-RKYcCt-96\"]")
+	public WebElement enterCodeBox;
+	
+	@FindBy(xpath = "//*[@id=\"pp-ITtwNa-96\"]")
+	public WebElement inputCode;
+	
+	@FindBy(xpath = "//*[@id=\"pp-ITtwNa-97\"]/span/input")
+	public WebElement applyButton;
+	
+	@FindBy(xpath = "//*[@id=\"pp-RKYcCt-95\"]/div/div/div/h4")
+	public WebElement thereWasAProblemErr;
+	
+	
 }
